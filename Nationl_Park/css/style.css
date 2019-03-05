@@ -1,29 +1,67 @@
 
 /* header & nav */
 
-header {
 
+
+header {
+  border-bottom: 3px solid #d0a064;
+  background-color: #167C80;
+  display: flex;
+  justify-content: space-between;
+
+ 
 }
 
 header .logo, header nav {
+  display: flex;
+ 
+
+ 
 
 }
 
 
 .container .aboutrow {
-
+  flex-direction :row;
+  justify-content:center;
+  display: flex;
 }
 
 
 /* feature */
-
 .feature {
+  background-color: #167C80;
+}
+#feature {
+ 
+ 
+  display: flex;
+
 
 }
+
+.feat-right {
+  padding: 50px;
+  
+}
+
+.feat-right p {
+  color: white;
+  margin: 1em 0;
+}
+.feat-left {
+ 
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+ 
+  
+  } 
 
 /* cta */
 
 .cta .container {
+ 
 
 }
 
@@ -31,11 +69,17 @@ header .logo, header nav {
 /* footer */
 
 footer {
+  text-align: left;
+  padding: 50px 15px 50px 200px;
+  background-color: #222;
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .footer-left {
-
+  display: flex;
 }
 
 .footer-left .footer-col {
@@ -43,6 +87,9 @@ footer {
 }
 
 .footer-right {
+ 
+   align-content:flex-end;
+ 
 
 }
 
@@ -63,10 +110,6 @@ body {
   font-size: 13px;
 }
 
-header {
-  border-bottom: 3px solid #d0a064;
-  background-color: #167C80;
-}
 
 .logo {
   padding: 15px;
@@ -77,6 +120,9 @@ header {
 
 nav ul li {
   padding: 15px;
+  list-style-type:none;
+  /* display: flex; */
+  display: inline;
 }
 
 .navigation a {
@@ -87,6 +133,7 @@ nav ul li {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 0.8em;
+
 }
 
 .navigation li:hover a {
@@ -95,6 +142,8 @@ nav ul li {
 }
 
 .hero-cont {
+  /* display: flex;*/
+ 
   background-image: url('../assets/hero.jpg');
   background-size: cover;
   background-position: center center;
@@ -129,12 +178,20 @@ nav ul li {
   padding: 5px 15px;
   text-decoration:none;
   transition: all 0.2s;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  /* flex-direction: row;
+  justify-content: center; */
+  display: flex;
+
 }
 
 .aboutbtn:hover, .contactbtn:hover {
   background-color: #167C80;
   color: white;
   transition:all 0.2s;
+
 }
 
 .container .top {
@@ -146,6 +203,7 @@ nav ul li {
   line-height: 1.4em;
   padding: 1em;
   font-style: italic;
+ 
 }
 
 .top p {
@@ -174,24 +232,9 @@ nav ul li {
   padding: 0.8em 0;
 }
 
-.feature {
-  background-color: #167C80;
-}
 
-.feat-left {
-  background-image: url('../assets/glacier.jpg');
-  background-size:cover;
-  background-position:center center;
-}
 
-.feat-right {
-  padding: 50px;
-}
 
-.feat-right p {
-  color: white;
-  margin: 1em 0;
-}
 
 .feat-intro {
   text-transform: uppercase;
@@ -211,12 +254,10 @@ nav ul li {
   background-color: #d0a064;
 }
 
-footer {
-  background-color: #222;
-  color: #ddd;
-  padding: 50px;
-  text-align: center;
-}
+/* footer {
+ 
+
+} */
 
 .footer-col {
   padding: 15px 0;
@@ -253,6 +294,8 @@ footer h5 {
 
 .cta .container h3 {
   font-size: 1.5em;
+  justify-content: center;
+  display: flex;
 }
 
 @media screen and (min-width: 1025px) {
@@ -260,9 +303,6 @@ footer h5 {
     font-size: 16px;
   }
 
-  footer {
-    text-align: left;
-    padding: 50px 15px 50px 200px;
-  }
+ 
 
 }
